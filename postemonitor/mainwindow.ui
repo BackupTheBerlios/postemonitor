@@ -1,0 +1,292 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>myMainWindow</class>
+ <widget class="QDialog" name="myMainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>4</hsizetype>
+    <vsizetype>4</vsizetype>
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>350</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>350</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>postemonitor</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="postemonitor.qrc" >:/icon.png</iconset>
+  </property>
+  <property name="modal" >
+   <bool>false</bool>
+  </property>
+  <widget class="QTabWidget" name="tabProdotti" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>352</width>
+     <height>352</height>
+    </rect>
+   </property>
+   <property name="tabPosition" >
+    <enum>QTabWidget::West</enum>
+   </property>
+   <property name="tabShape" >
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <widget class="QWidget" name="lettere" >
+    <attribute name="title" >
+     <string>    .</string>
+    </attribute>
+    <attribute name="icon" >
+     <iconset resource="postemonitor.qrc" >:/lettere.png</iconset>
+    </attribute>
+    <widget class="QTabWidget" name="tabLettere" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>-1</y>
+       <width>330</width>
+       <height>350</height>
+      </rect>
+     </property>
+     <property name="tabPosition" >
+      <enum>QTabWidget::West</enum>
+     </property>
+     <widget class="QWidget" name="raccomandata" >
+      <attribute name="title" >
+       <string>Raccomandata</string>
+      </attribute>
+      <widget class="raccomandataMonitor" name="frame" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>300</width>
+         <height>300</height>
+        </rect>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="assicurata" >
+      <attribute name="title" >
+       <string>Assicurata</string>
+      </attribute>
+      <widget class="assicurataMonitor" name="frameAssicurata" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>300</width>
+         <height>300</height>
+        </rect>
+       </property>
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>13</hsizetype>
+         <vsizetype>13</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize" >
+        <size>
+         <width>300</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>300</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>300</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pacchi" >
+    <attribute name="title" >
+     <string>   .</string>
+    </attribute>
+    <attribute name="icon" >
+     <iconset resource="postemonitor.qrc" >:/pacchi.png</iconset>
+    </attribute>
+    <widget class="QTabWidget" name="tabPacchi" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>-1</y>
+       <width>332</width>
+       <height>352</height>
+      </rect>
+     </property>
+     <property name="tabPosition" >
+      <enum>QTabWidget::West</enum>
+     </property>
+     <widget class="QWidget" name="paccocelere1" >
+      <attribute name="title" >
+       <string>paccocelere1</string>
+      </attribute>
+      <widget class="QLabel" name="label_7" >
+       <property name="geometry" >
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>73</width>
+         <height>53</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">J+1&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="paccocelere3" >
+      <attribute name="title" >
+       <string>paccocelere3</string>
+      </attribute>
+      <widget class="QLabel" name="label_6" >
+       <property name="geometry" >
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>73</width>
+         <height>53</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">J+3&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="paccocelereinternazionale" >
+      <attribute name="title" >
+       <string>paccocelere Internazionale</string>
+      </attribute>
+      <widget class="QLabel" name="label_5" >
+       <property name="geometry" >
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>73</width>
+         <height>53</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">JInt&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="about" >
+    <attribute name="title" >
+     <string>About</string>
+    </attribute>
+    <widget class="QLabel" name="label" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>321</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text" >
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">About&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;">&lt;span style=" font-weight:400;">postemonitor è un programma creato dal Lux Team. E' scritto completamente in C++ usando le librerie QT4 e, rilasciato sotto licenza GPL, è attualmente disponibile per Windows e Linux.&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Sebbene sia un programma freeware accettiamo volentieri donazioni.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">Disclaimer&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Il Lux Team non è in alcun modo associato a Poste Italiane.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">postemonitor non è un prodotto ufficiale di Poste Italiane nè vuole essere in alcun modo un servizio sostitutivo a quello offerto da Poste Italiane.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">Marchi registrati&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Mac, Macintosh, il logo Mac OS sono marchi registrati Apple Computer, Inc. negli Stati Uniti ed in altri paesi. Microsoft, Windows, ed il logo Windows sono marchi registrati di Microsoft Corporation negli Stati Uniti ed in altri paesi. Linux è un marchio registrato Linus Torvalds. Tutti gli altri marchi commerciali citati sono marchi registrati dei rispettivi proprietari. &lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+     <property name="textFormat" >
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>311</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="pixmap" >
+      <pixmap resource="postemonitor.qrc" >:/postemonitorlogo.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>raccomandataMonitor</class>
+   <extends>QFrame</extends>
+   <header>raccomandatamonitor.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>assicurataMonitor</class>
+   <extends>QFrame</extends>
+   <header>assicuratamonitor.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="postemonitor.qrc" />
+ </resources>
+ <connections/>
+</ui>

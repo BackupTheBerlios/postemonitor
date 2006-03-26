@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>icon.png</file>
+        <file>lettere.png</file>
+        <file>pacchi.png</file>
+        <file>postemonitorlogo.png</file>
+    </qresource>
+</RCC>
