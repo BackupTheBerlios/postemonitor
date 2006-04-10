@@ -147,6 +147,24 @@
       <attribute name="title" >
        <string>postacelere</string>
       </attribute>
+      <layout class="QHBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="CelereOneMonitor" name="framePostaCelere" >
+         <property name="frameShape" >
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </widget>
@@ -161,7 +179,7 @@
      <property name="geometry" >
       <rect>
        <x>0</x>
-       <y>-1</y>
+       <y>0</y>
        <width>332</width>
        <height>352</height>
       </rect>
@@ -173,73 +191,93 @@
       <attribute name="title" >
        <string>paccocelere1</string>
       </attribute>
-      <widget class="QLabel" name="label_7" >
-       <property name="geometry" >
-        <rect>
-         <x>90</x>
-         <y>110</y>
-         <width>73</width>
-         <height>53</height>
-        </rect>
+      <layout class="QHBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
        </property>
-       <property name="text" >
-        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">J+1&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       <property name="spacing" >
+        <number>6</number>
        </property>
-      </widget>
+       <item>
+        <widget class="CelereOneMonitor" name="frameCelereUno" >
+         <property name="frameShape" >
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="paccocelere3" >
       <attribute name="title" >
        <string>paccocelere3</string>
       </attribute>
-      <widget class="QLabel" name="label_6" >
-       <property name="geometry" >
-        <rect>
-         <x>90</x>
-         <y>110</y>
-         <width>73</width>
-         <height>53</height>
-        </rect>
+      <layout class="QHBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
        </property>
-       <property name="text" >
-        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">J+3&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       <property name="spacing" >
+        <number>6</number>
        </property>
-      </widget>
+       <item>
+        <widget class="CelereMonitor" name="frameCelereTreMonitor" >
+         <property name="frameShape" >
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="paccoceleremaxi" >
       <attribute name="title" >
        <string>paccocelere Maxi</string>
       </attribute>
-      <widget class="QLabel" name="label_8" >
-       <property name="geometry" >
-        <rect>
-         <x>80</x>
-         <y>110</y>
-         <width>91</width>
-         <height>56</height>
-        </rect>
+      <layout class="QHBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
        </property>
-       <property name="text" >
-        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">Maxi&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       <property name="spacing" >
+        <number>6</number>
        </property>
-      </widget>
+       <item>
+        <widget class="CelereOneMonitor" name="frameCelereMaxi" >
+         <property name="frameShape" >
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="paccocelereinternazionale" >
       <attribute name="title" >
        <string>paccocelere Internazionale</string>
       </attribute>
-      <widget class="QLabel" name="label_5" >
-       <property name="geometry" >
-        <rect>
-         <x>90</x>
-         <y>110</y>
-         <width>73</width>
-         <height>53</height>
-        </rect>
+      <layout class="QHBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
        </property>
-       <property name="text" >
-        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">JInt&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       <property name="spacing" >
+        <number>6</number>
        </property>
-      </widget>
+       <item>
+        <widget class="CelereOneMonitor" name="frameCelereInternazionale" >
+         <property name="frameShape" >
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </widget>
@@ -294,6 +332,13 @@
  <pixmapfunction></pixmapfunction>
  <customwidgets>
   <customwidget>
+   <class>CelereMonitor</class>
+   <extends>QFrame</extends>
+   <header>celeremonitor.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
    <class>assicurataMonitor</class>
    <extends>QFrame</extends>
    <header>assicuratamonitor.h</header>
@@ -304,6 +349,13 @@
    <class>raccomandataMonitor</class>
    <extends>QFrame</extends>
    <header>raccomandatamonitor.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>CelereOneMonitor</class>
+   <extends>QFrame</extends>
+   <header>celereonemonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
