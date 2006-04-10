@@ -6,6 +6,10 @@ assicurataMonitor::assicurataMonitor(QWidget* parent):QFrame(parent)
 	setupUi(this);
 	sock=new QHttp();
 
+	QRegExp rx("\\d{12}");
+	QValidator *validator = new QRegExpValidator(rx, this);
+	numerow->setValidator(validator);
+
 	connect(sock, SIGNAL(requestFinished(int,bool)),
 			this, SLOT(on_sock_requestFinished(int,bool)));
 	connect(sock, SIGNAL(requestStarted(int)),
@@ -58,5 +62,6 @@ void assicurataMonitor::on_sock_requestFinished(int numeroreq, bool err)
 
 void assicurataMonitor::on_numerow_textChanged(const QString newtesto)
 {
-	if(numerow->text().length()==12)bottone->setEnabled(true);
+	if(numerow->hasAcceptableInput())bottone->setEnabled(true);
+	else bottone->setEnabled(false);
 }
