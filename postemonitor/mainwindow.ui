@@ -77,7 +77,7 @@
      </property>
      <widget class="QWidget" name="raccomandata" >
       <attribute name="title" >
-       <string>Raccomandata</string>
+       <string>raccomandata</string>
       </attribute>
       <widget class="raccomandataMonitor" name="frame" >
        <property name="geometry" >
@@ -98,7 +98,7 @@
      </widget>
      <widget class="QWidget" name="assicurata" >
       <attribute name="title" >
-       <string>Assicurata</string>
+       <string>assicurata</string>
       </attribute>
       <widget class="assicurataMonitor" name="frameAssicurata" >
        <property name="geometry" >
@@ -142,6 +142,11 @@
         <enum>QFrame::Raised</enum>
        </property>
       </widget>
+     </widget>
+     <widget class="QWidget" name="postacelere" >
+      <attribute name="title" >
+       <string>postacelere</string>
+      </attribute>
      </widget>
     </widget>
    </widget>
@@ -200,6 +205,24 @@
        </property>
       </widget>
      </widget>
+     <widget class="QWidget" name="paccoceleremaxi" >
+      <attribute name="title" >
+       <string>paccocelere Maxi</string>
+      </attribute>
+      <widget class="QLabel" name="label_8" >
+       <property name="geometry" >
+        <rect>
+         <x>80</x>
+         <y>110</y>
+         <width>91</width>
+         <height>56</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:29pt;">Maxi&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+       </property>
+      </widget>
+     </widget>
      <widget class="QWidget" name="paccocelereinternazionale" >
       <attribute name="title" >
        <string>paccocelere Internazionale</string>
@@ -224,31 +247,6 @@
     <attribute name="title" >
      <string>About</string>
     </attribute>
-    <widget class="QLabel" name="label" >
-     <property name="geometry" >
-      <rect>
-       <x>0</x>
-       <y>50</y>
-       <width>321</width>
-       <height>291</height>
-      </rect>
-     </property>
-     <property name="frameShadow" >
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="text" >
-      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">About&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;">&lt;span style=" font-weight:400;">postemonitor è un programma creato dal Lux Team. E' scritto completamente in C++ usando le librerie QT4 e, rilasciato sotto licenza GPL, è attualmente disponibile per Windows e Linux.&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Sebbene sia un programma freeware accettiamo volentieri donazioni.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">Disclaimer&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Il Lux Team non è in alcun modo associato a Poste Italiane.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">postemonitor non è un prodotto ufficiale di Poste Italiane nè vuole essere in alcun modo un servizio sostitutivo a quello offerto da Poste Italiane.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600;">Marchi registrati&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Mac, Macintosh, il logo Mac OS sono marchi registrati Apple Computer, Inc. negli Stati Uniti ed in altri paesi. Microsoft, Windows, ed il logo Windows sono marchi registrati di Microsoft Corporation negli Stati Uniti ed in altri paesi. Linux è un marchio registrato Linus Torvalds. Tutti gli altri marchi commerciali citati sono marchi registrati dei rispettivi proprietari. &lt;/p>&lt;/body>&lt;/html></string>
-     </property>
-     <property name="textFormat" >
-      <enum>Qt::AutoText</enum>
-     </property>
-     <property name="scaledContents" >
-      <bool>false</bool>
-     </property>
-     <property name="wordWrap" >
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_2" >
      <property name="geometry" >
       <rect>
@@ -265,22 +263,47 @@
       <pixmap resource="postemonitor.qrc" >:/postemonitorlogo.png</pixmap>
      </property>
     </widget>
+    <widget class="QLabel" name="label" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>321</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text" >
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">About&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;">&lt;span style=" font-weight:400;">postemonitor è un programma creato dal Lux Team. E' scritto completamente in C++ usando le librerie QT4 e, rilasciato sotto licenza GPL, è attualmente disponibile per Windows e Linux.&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Sebbene sia un programma freeware accettiamo volentieri donazioni.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Disclaimer&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Il Lux Team non è in alcun modo associato a Poste Italiane.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">postemonitor non è un prodotto ufficiale di Poste Italiane nè vuole essere in alcun modo un servizio sostitutivo a quello offerto da Poste Italiane.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Marchi registrati&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Microsoft, Windows, ed il logo Windows sono marchi registrati di Microsoft Corporation negli Stati Uniti ed in altri paesi.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Linux è un marchio registrato di Linus Torvalds.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Tutti gli altri marchi commerciali citati sono marchi registrati dei rispettivi proprietari. &lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+     <property name="textFormat" >
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap" >
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
  <pixmapfunction></pixmapfunction>
  <customwidgets>
   <customwidget>
-   <class>raccomandataMonitor</class>
+   <class>assicurataMonitor</class>
    <extends>QFrame</extends>
-   <header>raccomandatamonitor.h</header>
+   <header>assicuratamonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
   <customwidget>
-   <class>assicurataMonitor</class>
+   <class>raccomandataMonitor</class>
    <extends>QFrame</extends>
-   <header>assicuratamonitor.h</header>
+   <header>raccomandatamonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
