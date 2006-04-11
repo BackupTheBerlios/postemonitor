@@ -8,8 +8,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>350</width>
-    <height>350</height>
+    <width>450</width>
+    <height>450</height>
    </rect>
   </property>
   <property name="sizePolicy" >
@@ -22,21 +22,27 @@
   </property>
   <property name="minimumSize" >
    <size>
-    <width>350</width>
-    <height>350</height>
+    <width>400</width>
+    <height>450</height>
    </size>
   </property>
   <property name="maximumSize" >
    <size>
-    <width>350</width>
-    <height>350</height>
+    <width>16777215</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="baseSize" >
+   <size>
+    <width>400</width>
+    <height>450</height>
    </size>
   </property>
   <property name="windowTitle" >
    <string>postemonitor</string>
   </property>
   <property name="windowIcon" >
-   <iconset resource="postemonitor.qrc" >:/icon.png</iconset>
+   <iconset resource="postemonitor.qrc" >:/images/icon.png</iconset>
   </property>
   <property name="modal" >
    <bool>false</bool>
@@ -46,9 +52,35 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>352</width>
-     <height>352</height>
+     <width>452</width>
+     <height>452</height>
     </rect>
+   </property>
+   <property name="sizePolicy" >
+    <sizepolicy>
+     <hsizetype>0</hsizetype>
+     <vsizetype>0</vsizetype>
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize" >
+    <size>
+     <width>452</width>
+     <height>452</height>
+    </size>
+   </property>
+   <property name="maximumSize" >
+    <size>
+     <width>450</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="baseSize" >
+    <size>
+     <width>450</width>
+     <height>450</height>
+    </size>
    </property>
    <property name="tabPosition" >
     <enum>QTabWidget::West</enum>
@@ -58,18 +90,18 @@
    </property>
    <widget class="QWidget" name="lettere" >
     <attribute name="title" >
-     <string>    .</string>
+     <string>   .</string>
     </attribute>
     <attribute name="icon" >
-     <iconset resource="postemonitor.qrc" >:/lettere.png</iconset>
+     <iconset resource="postemonitor.qrc" >:/images/lettere.png</iconset>
     </attribute>
     <widget class="QTabWidget" name="tabLettere" >
      <property name="geometry" >
       <rect>
        <x>0</x>
        <y>-1</y>
-       <width>330</width>
-       <height>350</height>
+       <width>430</width>
+       <height>450</height>
       </rect>
      </property>
      <property name="tabPosition" >
@@ -77,16 +109,37 @@
      </property>
      <widget class="QWidget" name="raccomandata" >
       <attribute name="title" >
-       <string>raccomandata</string>
+       <string>                            .</string>
       </attribute>
-      <widget class="raccomandataMonitor" name="frame" >
+      <attribute name="icon" >
+       <iconset resource="postemonitor.qrc" >:/images/raccomandata.png</iconset>
+      </attribute>
+      <widget class="raccomandataMonitor" name="frameRaccomandata" >
        <property name="geometry" >
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>300</width>
-         <height>300</height>
+         <width>400</width>
+         <height>450</height>
         </rect>
+       </property>
+       <property name="minimumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
        </property>
        <property name="frameShape" >
         <enum>QFrame::StyledPanel</enum>
@@ -98,15 +151,18 @@
      </widget>
      <widget class="QWidget" name="assicurata" >
       <attribute name="title" >
-       <string>assicurata</string>
+       <string>                     .</string>
+      </attribute>
+      <attribute name="icon" >
+       <iconset resource="postemonitor.qrc" >:/images/assicurata.png</iconset>
       </attribute>
       <widget class="assicurataMonitor" name="frameAssicurata" >
        <property name="geometry" >
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>300</width>
-         <height>300</height>
+         <width>400</width>
+         <height>450</height>
         </rect>
        </property>
        <property name="sizePolicy" >
@@ -119,20 +175,20 @@
        </property>
        <property name="minimumSize" >
         <size>
-         <width>300</width>
-         <height>300</height>
+         <width>400</width>
+         <height>450</height>
         </size>
        </property>
        <property name="maximumSize" >
         <size>
-         <width>300</width>
-         <height>300</height>
+         <width>400</width>
+         <height>450</height>
         </size>
        </property>
        <property name="baseSize" >
         <size>
-         <width>300</width>
-         <height>300</height>
+         <width>400</width>
+         <height>450</height>
         </size>
        </property>
        <property name="frameShape" >
@@ -145,26 +201,45 @@
      </widget>
      <widget class="QWidget" name="postacelere" >
       <attribute name="title" >
-       <string>postacelere</string>
+       <string>               .</string>
       </attribute>
-      <layout class="QHBoxLayout" >
-       <property name="margin" >
-        <number>9</number>
+      <attribute name="icon" >
+       <iconset resource="postemonitor.qrc" >:/images/postacelere.png</iconset>
+      </attribute>
+      <widget class="CelereOneMonitor" name="frameCelereUno_2" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>400</width>
+         <height>450</height>
+        </rect>
        </property>
-       <property name="spacing" >
-        <number>6</number>
+       <property name="minimumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
        </property>
-       <item>
-        <widget class="CelereOneMonitor" name="framePostaCelere" >
-         <property name="frameShape" >
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow" >
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       <property name="maximumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -173,15 +248,15 @@
      <string>   .</string>
     </attribute>
     <attribute name="icon" >
-     <iconset resource="postemonitor.qrc" >:/pacchi.png</iconset>
+     <iconset resource="postemonitor.qrc" >:/images/pacchi.png</iconset>
     </attribute>
     <widget class="QTabWidget" name="tabPacchi" >
      <property name="geometry" >
       <rect>
        <x>0</x>
-       <y>0</y>
-       <width>332</width>
-       <height>352</height>
+       <y>-1</y>
+       <width>430</width>
+       <height>450</height>
       </rect>
      </property>
      <property name="tabPosition" >
@@ -189,76 +264,148 @@
      </property>
      <widget class="QWidget" name="paccocelere1" >
       <attribute name="title" >
-       <string>paccocelere1</string>
+       <string>              .</string>
       </attribute>
-      <layout class="QHBoxLayout" >
-       <property name="margin" >
-        <number>9</number>
+      <attribute name="icon" >
+       <iconset resource="postemonitor.qrc" >:/images/paccocelere1.png</iconset>
+      </attribute>
+      <widget class="CelereOneMonitor" name="frameCelereUno" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>400</width>
+         <height>450</height>
+        </rect>
        </property>
-       <property name="spacing" >
-        <number>6</number>
+       <property name="minimumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
        </property>
-       <item>
-        <widget class="CelereOneMonitor" name="frameCelereUno" >
-         <property name="frameShape" >
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow" >
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       <property name="maximumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="paccocelere3" >
       <attribute name="title" >
-       <string>paccocelere3</string>
+       <string>               .</string>
       </attribute>
-      <layout class="QHBoxLayout" >
-       <property name="margin" >
-        <number>9</number>
+      <attribute name="icon" >
+       <iconset resource="postemonitor.qrc" >:/images/paccocelere3.png</iconset>
+      </attribute>
+      <widget class="CelereMonitor" name="frameCelereTreMonitor" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>400</width>
+         <height>450</height>
+        </rect>
        </property>
-       <property name="spacing" >
-        <number>6</number>
+       <property name="minimumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
        </property>
-       <item>
-        <widget class="CelereMonitor" name="frameCelereTreMonitor" >
-         <property name="frameShape" >
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow" >
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       <property name="maximumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="sizeIncrement" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="paccoceleremaxi" >
       <attribute name="title" >
-       <string>paccocelere Maxi</string>
+       <string>                      .</string>
       </attribute>
-      <layout class="QHBoxLayout" >
-       <property name="margin" >
-        <number>9</number>
+      <attribute name="icon" >
+       <iconset resource="postemonitor.qrc" >:/images/paccoceleremaxi.png</iconset>
+      </attribute>
+      <widget class="CelereOneMonitor" name="frameCelereMaxi" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>400</width>
+         <height>450</height>
+        </rect>
        </property>
-       <property name="spacing" >
-        <number>6</number>
+       <property name="minimumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
        </property>
-       <item>
-        <widget class="CelereOneMonitor" name="frameCelereMaxi" >
-         <property name="frameShape" >
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow" >
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       <property name="maximumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="sizeIncrement" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="paccocelereinternazionale" >
       <attribute name="title" >
-       <string>paccocelere Internazionale</string>
+       <string>                                        .</string>
+      </attribute>
+      <attribute name="icon" >
+       <iconset resource="postemonitor.qrc" >:/images/paccocelereinternazionale.png</iconset>
       </attribute>
       <layout class="QHBoxLayout" >
        <property name="margin" >
@@ -269,6 +416,24 @@
        </property>
        <item>
         <widget class="CelereOneMonitor" name="frameCelereInternazionale" >
+         <property name="minimumSize" >
+          <size>
+           <width>400</width>
+           <height>450</height>
+          </size>
+         </property>
+         <property name="maximumSize" >
+          <size>
+           <width>400</width>
+           <height>450</height>
+          </size>
+         </property>
+         <property name="baseSize" >
+          <size>
+           <width>400</width>
+           <height>450</height>
+          </size>
+         </property>
          <property name="frameShape" >
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -283,38 +448,25 @@
    </widget>
    <widget class="QWidget" name="about" >
     <attribute name="title" >
-     <string>About</string>
+     <string> .</string>
     </attribute>
-    <widget class="QLabel" name="label_2" >
-     <property name="geometry" >
-      <rect>
-       <x>10</x>
-       <y>0</y>
-       <width>311</width>
-       <height>52</height>
-      </rect>
-     </property>
-     <property name="text" >
-      <string/>
-     </property>
-     <property name="pixmap" >
-      <pixmap resource="postemonitor.qrc" >:/postemonitorlogo.png</pixmap>
-     </property>
-    </widget>
+    <attribute name="icon" >
+     <iconset resource="postemonitor.qrc" >:/images/about.png</iconset>
+    </attribute>
     <widget class="QLabel" name="label" >
      <property name="geometry" >
       <rect>
-       <x>0</x>
-       <y>50</y>
-       <width>321</width>
-       <height>291</height>
+       <x>5</x>
+       <y>65</y>
+       <width>415</width>
+       <height>300</height>
       </rect>
      </property>
      <property name="frameShadow" >
       <enum>QFrame::Plain</enum>
      </property>
      <property name="text" >
-      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">About&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;">&lt;span style=" font-weight:400;">postemonitor è un programma creato dal Lux Team. E' scritto completamente in C++ usando le librerie QT4 e, rilasciato sotto licenza GPL, è attualmente disponibile per Windows e Linux.&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Sebbene sia un programma freeware accettiamo volentieri donazioni.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Disclaimer&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Il Lux Team non è in alcun modo associato a Poste Italiane.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">postemonitor non è un prodotto ufficiale di Poste Italiane nè vuole essere in alcun modo un servizio sostitutivo a quello offerto da Poste Italiane.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Marchi registrati&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Microsoft, Windows, ed il logo Windows sono marchi registrati di Microsoft Corporation negli Stati Uniti ed in altri paesi.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Linux è un marchio registrato di Linus Torvalds.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Tutti gli altri marchi commerciali citati sono marchi registrati dei rispettivi proprietari. &lt;/p>&lt;/body>&lt;/html></string>
+      <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;/head>&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">About&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-weight:600;">&lt;span style=" font-weight:400;">postemonitor è un programma creato dal Lux Team. E' scritto completamente in C++ usando le librerie QT4 e, rilasciato sotto licenza GPL, è attualmente disponibile per Windows e Linux.&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Sebbene sia un programma freeware accettiamo volentieri donazioni.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Disclaimer&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Il Lux Team non è in alcun modo associato a Poste Italiane.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">postemonitor non è un prodotto ufficiale di Poste Italiane nè vuole essere in alcun modo un servizio sostitutivo a quello offerto da Poste Italiane.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Marchi registrati&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Microsoft, Windows, ed il logo Windows sono marchi registrati di Microsoft Corporation negli Stati Uniti ed in altri paesi.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Linux è un marchio registrato di Linus Torvalds.&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Tutti gli altri marchi commerciali citati sono marchi registrati dei rispettivi proprietari.&lt;/p>&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Supporto&lt;/span>&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Per maggiori informazioni e supporto:&lt;/p>&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">http://postemonitor.luxteam.net&lt;/p>&lt;/body>&lt;/html></string>
      </property>
      <property name="textFormat" >
       <enum>Qt::AutoText</enum>
@@ -326,22 +478,31 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="label_2" >
+     <property name="geometry" >
+      <rect>
+       <x>45</x>
+       <y>10</y>
+       <width>311</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="pixmap" >
+      <pixmap resource="postemonitor.qrc" >:/images/postemonitorlogo.png</pixmap>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
  <pixmapfunction></pixmapfunction>
  <customwidgets>
   <customwidget>
-   <class>CelereMonitor</class>
+   <class>CelereOneMonitor</class>
    <extends>QFrame</extends>
-   <header>celeremonitor.h</header>
-   <container>0</container>
-   <pixmap></pixmap>
-  </customwidget>
-  <customwidget>
-   <class>assicurataMonitor</class>
-   <extends>QFrame</extends>
-   <header>assicuratamonitor.h</header>
+   <header>celereonemonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
@@ -353,13 +514,25 @@
    <pixmap></pixmap>
   </customwidget>
   <customwidget>
-   <class>CelereOneMonitor</class>
+   <class>assicurataMonitor</class>
    <extends>QFrame</extends>
-   <header>celereonemonitor.h</header>
+   <header>assicuratamonitor.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>CelereMonitor</class>
+   <extends>QFrame</extends>
+   <header>celeremonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
  </customwidgets>
+ <tabstops>
+  <tabstop>tabLettere</tabstop>
+  <tabstop>tabProdotti</tabstop>
+  <tabstop>tabPacchi</tabstop>
+ </tabstops>
  <resources>
   <include location="postemonitor.qrc" />
  </resources>
