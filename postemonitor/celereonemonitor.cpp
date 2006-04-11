@@ -37,7 +37,7 @@ void CelereOneMonitor::on_lineEditCode_textChanged(const QString & text)
 	//piccola routine che converte il testo che viene scritto automaticamente in maiuscolo
 	lineEditCode->setText(text.toUpper());
 	//verfico le condizioni per l'invio della richiesta
-	if (lineEditCode->hasAcceptableInput() && (lineEditCode->text()).length() == 13)
+	if (lineEditCode->hasAcceptableInput() && (lineEditCode->text()).length() == 13 && myHttpClient->state() == QHttp::Unconnected)
 		pushButtonSend->setEnabled(true);//Abilito il bottone di invio se l'input è valido
 	else pushButtonSend->setEnabled(false);//disabilito il bottone di invio se l'input non è valido
 }

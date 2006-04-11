@@ -30,3 +30,5 @@ SOURCES += celeremonitor.cpp \
            assicuratamonitor.cpp \
            raccomandatamonitor.cpp
 RESOURCES += postemonitor.qrc
+QT += network
+RC_FILE = postemonitor.rc
