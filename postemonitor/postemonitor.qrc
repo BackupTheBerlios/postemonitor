@@ -1,16 +1,16 @@
 <RCC>
     <qresource prefix="/" >
-        <file>images/about.png</file>
-        <file>images/assicurata.png</file>
-        <file>images/icon.png</file>
-        <file>images/lettere.png</file>
-        <file>images/pacchi.png</file>
-        <file>images/paccocelere1.png</file>
-        <file>images/paccocelere3.png</file>
-        <file>images/paccocelereinternazionale.png</file>
-        <file>images/paccoceleremaxi.png</file>
-        <file>images/postacelere.png</file>
-        <file>images/postemonitorlogo.png</file>
-        <file>images/raccomandata.png</file>
+        <file>about.png</file>
+        <file>assicurata.png</file>
+        <file>icon.png</file>
+        <file>lettere.png</file>
+        <file>pacchi.png</file>
+        <file>paccocelere1.png</file>
+        <file>paccocelere3.png</file>
+        <file>paccocelereinternazionale.png</file>
+        <file>paccoceleremaxi.png</file>
+        <file>postacelere.png</file>
+        <file>postemonitorlogo.png</file>
+        <file>raccomandata.png</file>
     </qresource>
 </RCC>

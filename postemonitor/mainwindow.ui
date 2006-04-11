@@ -42,7 +42,7 @@
    <string>postemonitor</string>
   </property>
   <property name="windowIcon" >
-   <iconset resource="postemonitor.qrc" >:/images/icon.png</iconset>
+   <iconset/>
   </property>
   <property name="modal" >
    <bool>false</bool>
@@ -93,7 +93,7 @@
      <string>   .</string>
     </attribute>
     <attribute name="icon" >
-     <iconset resource="postemonitor.qrc" >:/images/lettere.png</iconset>
+     <iconset resource="postemonitor.qrc" >:/lettere.png</iconset>
     </attribute>
     <widget class="QTabWidget" name="tabLettere" >
      <property name="geometry" >
@@ -112,7 +112,7 @@
        <string>                            .</string>
       </attribute>
       <attribute name="icon" >
-       <iconset resource="postemonitor.qrc" >:/images/raccomandata.png</iconset>
+       <iconset resource="postemonitor.qrc" >:/raccomandata.png</iconset>
       </attribute>
       <widget class="raccomandataMonitor" name="frameRaccomandata" >
        <property name="geometry" >
@@ -154,7 +154,7 @@
        <string>                     .</string>
       </attribute>
       <attribute name="icon" >
-       <iconset resource="postemonitor.qrc" >:/images/assicurata.png</iconset>
+       <iconset resource="postemonitor.qrc" >:/assicurata.png</iconset>
       </attribute>
       <widget class="assicurataMonitor" name="frameAssicurata" >
        <property name="geometry" >
@@ -204,7 +204,7 @@
        <string>               .</string>
       </attribute>
       <attribute name="icon" >
-       <iconset resource="postemonitor.qrc" >:/images/postacelere.png</iconset>
+       <iconset resource="postemonitor.qrc" >:/postacelere.png</iconset>
       </attribute>
       <widget class="CelereOneMonitor" name="frameCelereUno_2" >
        <property name="geometry" >
@@ -248,7 +248,7 @@
      <string>   .</string>
     </attribute>
     <attribute name="icon" >
-     <iconset resource="postemonitor.qrc" >:/images/pacchi.png</iconset>
+     <iconset resource="postemonitor.qrc" >:/pacchi.png</iconset>
     </attribute>
     <widget class="QTabWidget" name="tabPacchi" >
      <property name="geometry" >
@@ -267,7 +267,7 @@
        <string>              .</string>
       </attribute>
       <attribute name="icon" >
-       <iconset resource="postemonitor.qrc" >:/images/paccocelere1.png</iconset>
+       <iconset resource="postemonitor.qrc" >:/paccocelere1.png</iconset>
       </attribute>
       <widget class="CelereOneMonitor" name="frameCelereUno" >
        <property name="geometry" >
@@ -309,7 +309,7 @@
        <string>               .</string>
       </attribute>
       <attribute name="icon" >
-       <iconset resource="postemonitor.qrc" >:/images/paccocelere3.png</iconset>
+       <iconset resource="postemonitor.qrc" >:/paccocelere3.png</iconset>
       </attribute>
       <widget class="CelereMonitor" name="frameCelereTreMonitor" >
        <property name="geometry" >
@@ -357,7 +357,7 @@
        <string>                      .</string>
       </attribute>
       <attribute name="icon" >
-       <iconset resource="postemonitor.qrc" >:/images/paccoceleremaxi.png</iconset>
+       <iconset resource="postemonitor.qrc" >:/paccoceleremaxi.png</iconset>
       </attribute>
       <widget class="CelereOneMonitor" name="frameCelereMaxi" >
        <property name="geometry" >
@@ -405,7 +405,7 @@
        <string>                                        .</string>
       </attribute>
       <attribute name="icon" >
-       <iconset resource="postemonitor.qrc" >:/images/paccocelereinternazionale.png</iconset>
+       <iconset resource="postemonitor.qrc" >:/paccocelereinternazionale.png</iconset>
       </attribute>
       <layout class="QHBoxLayout" >
        <property name="margin" >
@@ -451,7 +451,7 @@
      <string> .</string>
     </attribute>
     <attribute name="icon" >
-     <iconset resource="postemonitor.qrc" >:/images/about.png</iconset>
+     <iconset resource="postemonitor.qrc" >:/about.png</iconset>
     </attribute>
     <widget class="QLabel" name="label" >
      <property name="geometry" >
@@ -491,7 +491,7 @@
       <string/>
      </property>
      <property name="pixmap" >
-      <pixmap resource="postemonitor.qrc" >:/images/postemonitorlogo.png</pixmap>
+      <pixmap resource="postemonitor.qrc" >:/postemonitorlogo.png</pixmap>
      </property>
     </widget>
    </widget>
@@ -500,16 +500,16 @@
  <pixmapfunction></pixmapfunction>
  <customwidgets>
   <customwidget>
-   <class>CelereOneMonitor</class>
+   <class>CelereMonitor</class>
    <extends>QFrame</extends>
-   <header>celereonemonitor.h</header>
+   <header>celeremonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
   <customwidget>
-   <class>raccomandataMonitor</class>
+   <class>CelereOneMonitor</class>
    <extends>QFrame</extends>
-   <header>raccomandatamonitor.h</header>
+   <header>celereonemonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
@@ -521,9 +521,9 @@
    <pixmap></pixmap>
   </customwidget>
   <customwidget>
-   <class>CelereMonitor</class>
+   <class>raccomandataMonitor</class>
    <extends>QFrame</extends>
-   <header>celeremonitor.h</header>
+   <header>raccomandatamonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
