@@ -196,7 +196,14 @@ void CelereOneMonitor::parse(QByteArray *buffer)
 	if(buffer->indexOf("Attenzione!",0) != -1)
 	{
 		buffer->clear();
-		QMessageBox::information(this,tr("Attenzione"),tr("Informazione non ancora disponibile!"));
+		QMessageBox::information(this,tr("Attenzione"),tr("Informazione non ancora disponibile o codice inserito errato.<br>Controllare l'esattezza dei dati ed eventualmente riprovare pi&ugrave; tardi."));
+		return;
+	}
+
+	else if(buffer->indexOf("momento",0) != -1)
+	{
+		buffer->clear();
+		QMessageBox::information(this,tr("Attenzione"),tr("Il servizio non &egrave; al momento disponibile.<BR>Riprovare nuovamente pi&ugrave; tardi."));
 		return;
 	}
 	

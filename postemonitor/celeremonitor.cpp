@@ -176,9 +176,12 @@ void CelereMonitor::update_listView()
 
 	if(finalOut.contains("Attenzione!",	Qt::CaseInsensitive)>0)
 	{
-		QMessageBox::information(this,tr("Attenzione"),tr("%1").arg(finalOut));
+		QMessageBox::information(this,tr("Attenzione"),tr("Informazione non ancora disponibile o codice inserito errato.<br>Controllare l'esattezza dei dati ed eventualmente riprovare pi&ugrave; tardi."));
+		//.arg(finalOut));
 		//this->groupBoxResponse->setEnabled(false);
 	}
+	else if(finalOut.contains("momento",	Qt::CaseInsensitive)>0)
+		QMessageBox::information(this,tr("Attenzione"),tr("Il servizio non &egrave; al momento disponibile.<BR>Riprovare nuovamente pi&ugrave; tardi."));
 	else
 	{
 		//this->groupBoxResponse->setEnabled(true);
