@@ -42,7 +42,7 @@
    <string>postemonitor</string>
   </property>
   <property name="windowIcon" >
-   <iconset/>
+   <iconset resource="postemonitor.qrc" >:/icon.png</iconset>
   </property>
   <property name="modal" >
    <bool>false</bool>
@@ -407,42 +407,40 @@
       <attribute name="icon" >
        <iconset resource="postemonitor.qrc" >:/paccocelereinternazionale.png</iconset>
       </attribute>
-      <layout class="QHBoxLayout" >
-       <property name="margin" >
-        <number>9</number>
+      <widget class="CelereOneMonitor" name="frameCelereInternazionale" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>400</width>
+         <height>450</height>
+        </rect>
        </property>
-       <property name="spacing" >
-        <number>6</number>
+       <property name="minimumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
        </property>
-       <item>
-        <widget class="CelereOneMonitor" name="frameCelereInternazionale" >
-         <property name="minimumSize" >
-          <size>
-           <width>400</width>
-           <height>450</height>
-          </size>
-         </property>
-         <property name="maximumSize" >
-          <size>
-           <width>400</width>
-           <height>450</height>
-          </size>
-         </property>
-         <property name="baseSize" >
-          <size>
-           <width>400</width>
-           <height>450</height>
-          </size>
-         </property>
-         <property name="frameShape" >
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow" >
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       <property name="maximumSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>400</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -519,9 +517,9 @@
    <pixmap></pixmap>
   </customwidget>
   <customwidget>
-   <class>assicurataMonitor</class>
+   <class>CelereMonitor</class>
    <extends>QFrame</extends>
-   <header>assicuratamonitor.h</header>
+   <header>celeremonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
@@ -533,9 +531,9 @@
    <pixmap></pixmap>
   </customwidget>
   <customwidget>
-   <class>CelereMonitor</class>
+   <class>assicurataMonitor</class>
    <extends>QFrame</extends>
-   <header>celeremonitor.h</header>
+   <header>assicuratamonitor.h</header>
    <container>0</container>
    <pixmap></pixmap>
   </customwidget>
